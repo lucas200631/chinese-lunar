@@ -7,6 +7,7 @@ import * as C from './constant';
 
 const isUndefined = (s: any): s is undefined => s === undefined;
 
+// 取得时辰 在中国古代的时间计算方法是12个时辰 每个时辰2个小时
 const twoHourIndex = (h: number) => Math.floor((h + 1) / 2) % 12;
 
 const prettyUnit = (u: string): string => {
